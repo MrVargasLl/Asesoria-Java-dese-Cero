@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <section class="Titulo">
+            <p>Password Generator</p>
+        </section>
+        
+        <section id="password" class="password">
+            <p>PTx1f5DaFX</p>
+            <img src="./Img/copiar-el-simbolo-de-interfaz-de-dos-hojas-de-papel.png" alt="icon">
+        </section>
+
+        <section id="generador" class="generador">
+            <div id="barra" class="barra">
+                
+                <label for="length">Character Length</label>
+                
+                <span id="rangeValue">10</span>
+                                
+                <input type="range" id="length" min="8" max="20" value="10">
+                
+            </div>
+            
+            <div id="lista" class="lista">
+                <div>
+                    <input type="checkbox" id="uppercase"> <label for="uppercase">Include Uppercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="lowercase"> <label for="lowercase">Include Lowercase Letters</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="numbers"> <label for="numbers">Include Numbers</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="symbols"> <label for="symbols">Include Symbols</label>
+                </div>
+                
+            </div>
+
+            
+            <div>
+                <div>Strength</div>
+                    <div class="strength-bar">
+                    <div id="strengthIndicator" class="medium"></div>
+                </div>
+    </div>
+ <button id="generate">GENERATE</button>
+
+
+            </div>
+
+           
+        </section>
+    </div>
+</body>
+</html>
